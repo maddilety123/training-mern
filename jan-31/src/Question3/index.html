@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://unpkg.com/react@17.0.0/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@17.0.0/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/@babel/standalone@7.12.4/babel.js"></script> 
+        <style>
+            .bg-container{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                
+            }
+            .table{
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="root" class="bg-container">
+
+        </div>
+
+        <script type="text/babel">
+        let rootEl=document.getElementById("root")
+        // let postDetails
+            let getDetails=async ()=>{
+                try{
+                    let response=await fetch("https://retoolapi.dev/BUCPSc/posts/")
+                    let responseJson= await response.json()
+                    
+                    
+                    let tableEl=(
+                    <table className="table">
+                        <th className="table">Post Title</th>
+                            
+                            {responseJson.map((eachPost)=>{
+                                return <>
+                                <tr key={eachPost.id} style={{border:"1px solid  black" }}>{eachPost.title} </tr> 
+                                <hr/>
+                                </>       
+                            })
+                            
+                        }  
+                           
+
+                        
+                            
+                    </table>
+                )
+
+               ReactDOM.render(tableEl,rootEl)   
+
+                }
+                catch(error){
+                      console.log(error)  
+                }
+                
+               
+
+            }
+
+            getDetails()
+            console.log(postDetails)
+              
+        </script>
+
+    </body>
+
+</html>
