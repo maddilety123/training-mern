@@ -1,0 +1,11 @@
+.button-container{
+    display: flex;
+}
+.btn{
+    margin-right: 10px;
+    width: 4vw;
+    background-color: #57b9fa;
+    color: #ffffff;
+    border-radius: 5px;
+    height: 4vh;
+}
