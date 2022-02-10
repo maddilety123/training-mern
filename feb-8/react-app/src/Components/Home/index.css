@@ -1,0 +1,26 @@
+.links{
+    list-style-type: none;
+    padding-right: 30px;
+  
+    text-decoration: none;
+}
+.home-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right:30px;
+}
+
+.route-link{
+    
+    font-size: 20px;
+    font-weight: bold;
+    color: #12022f;
+    text-decoration: none;
+    
+}
+
+/* body{
+    display: none;
+} */
