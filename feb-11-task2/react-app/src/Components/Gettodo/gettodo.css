@@ -1,0 +1,27 @@
+.todos-container{
+    background-color: #e3e5e8;
+    width: 40vw;
+    padding: 10px;
+}
+.todo{
+    background-color: #ffffff;
+    list-style-type: none;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 4vh;
+    margin-bottom: 3px;
+}
+.btn{
+    width: 20px;
+    height: 3vh;
+   background-color: #ffffff;
+    margin-right: 10px;
+    border: none;
+    
+}
+.i{
+    color: black;
+}
