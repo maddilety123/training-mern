@@ -1,0 +1,28 @@
+.app-container {
+  background-color: #688ecc;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-container {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 2px solid #aebbd1;
+}
+.user-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.user-card {
+  list-style-type: none;
+  color: #ffffff;
+  background-color: #aebbd1;
+  margin: 5px;
+  padding: 20px;
+  border-radius: 10px;
+}
