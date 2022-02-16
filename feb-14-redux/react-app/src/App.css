@@ -1,0 +1,24 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.form-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.tables-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+table,
+th,
+td,
+tr {
+  border: 1px black solid;
+}
+.table {
+  margin: 25px;
+}
