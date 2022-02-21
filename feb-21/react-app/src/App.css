@@ -1,0 +1,142 @@
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.nav-container {
+  height: 35vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nav-card {
+  margin-top: 25px;
+  margin-bottom: 5 0px;
+}
+.basket-container {
+  margin-left: 50px;
+}
+
+.main-heading {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 10px;
+}
+.search-container {
+  background-color: #f7bad6;
+  width: 50%;
+  height: 12vh;
+  border-radius: 7px;
+  border: 1px solid red;
+  margin-top: 30px;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 15px;
+  margin-bottom: 30px;
+}
+input {
+  margin-left: 20px;
+  width: 25vw;
+  height: 5vh;
+}
+.grocery-basket-container {
+  display: flex;
+  margin-top: 20px;
+  flex-direction: row;
+  justify-content: space-around;
+}
+/* .grocery-container {
+
+} */
+.leaf-grocery-card {
+  display: flex;
+}
+.leaf-icon {
+  margin-top: 3px;
+  margin-right: 3px;
+}
+.grocery-heading {
+  font-size: 20px;
+}
+.grocery-items-card {
+  padding-left: 0px;
+}
+.grocery-item {
+  list-style-type: none;
+  background-color: #e3e8e1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 3vw;
+  margin-bottom: 4px;
+  width: 25vw;
+  padding-left: 0px;
+}
+.footer-container {
+  height: 23vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-card {
+  display: flex;
+}
+.footer-links {
+  color: white;
+}
+.basket-items-card {
+  padding-left: 0px;
+}
+.plus-icon-container {
+  align-self: center;
+}
+.plus-icon {
+  margin-left: 10px;
+  font-size: 10px;
+  margin-right: 10px;
+}
+.grocery-name {
+  align-self: center;
+  margin-top: 13px;
+}
+.basket-delete-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.basket-card {
+  display: flex;
+}
+.basket-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  list-style-type: none;
+  background-color: #e3e8e1;
+
+  height: 3vw;
+  margin-bottom: 4px;
+  width: 25vw;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+.checked {
+  text-decoration: line-through;
+}
+
+.Parent :hover .plus-icon {
+  background-color: green;
+}
+.underline {
+  color: white;
+  text-decoration: underline;
+}
