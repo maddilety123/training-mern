@@ -24,9 +24,16 @@ class App extends Component {
     this.props.onDeleteLocal(id);
   };
 
-  onInputChange = () => {};
+  onInputChange = (event) => {
+    this.props.inputchange(event.target.value);
+  };
 
   render() {
+    const modifiedList = this.props.postList.filter((eachpost) => {
+      if (eachpost?.title?.includes(this.props.searchInput)) {
+        return eachpost;
+      }
+    });
     return (
       <div className="app-container">
         <input
@@ -48,7 +55,7 @@ class App extends Component {
                   <th className="table">Edit</th>
                   <th className="table">Delete</th>
                 </tbody>
-                {this.props.postList.map((eachpost) => (
+                {modifiedList.map((eachpost) => (
                   <tr key={eachpost.id} table className="table">
                     <td className="table">{eachpost.id}</td>
                     <td className="table">{eachpost.title}</td>
@@ -101,6 +108,7 @@ const mapDispatchToProps = (dispatch) => {
     onDeleteLocal: (id) => dispatch(postDelete(id)),
     localShow: (post) => dispatch({ type: "show", payload: post }),
     localEdit: (post) => dispatch({ type: "edit", payload: post }),
+    inputchange: (input) => dispatch({ type: "input", payload: input }),
   };
 };
 

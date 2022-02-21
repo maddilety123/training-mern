@@ -3,7 +3,7 @@ const intialState = {
   errorObject: {},
   isLoading: false,
   deleteStatus: "",
-  searchInput: "demo",
+  searchInput: "",
   showObject: {},
   editObject: {},
 };
@@ -25,6 +25,9 @@ const rootReducer = (state = intialState, action) => {
     return { ...state };
   } else if (action.type === "edit") {
     state.editObject = action.payload;
+    return { ...state };
+  } else if (action.type === "input") {
+    state.searchInput = action.payload;
     return { ...state };
   }
 
