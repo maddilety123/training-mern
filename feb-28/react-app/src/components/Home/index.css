@@ -1,0 +1,12 @@
+.home-container {
+  margin-top: 60px;
+  align-self: center;
+}
+
+.para {
+  color: red;
+}
+.error-message {
+  color: red;
+  padding-top: 1px;
+}

@@ -1,0 +1,23 @@
+.app-container {
+  min-height: 100vh;
+  background-color: azure;
+}
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  height: 25vh;
+  background-color: black;
+  margin-bottom: 30px;
+}
+.heading {
+  color: white;
+}
+.links-conainer {
+  display: flex;
+  flex-direction: row;
+}
+.route-link {
+  color: white;
+  text-decoration: none;
+  padding-left: 10px;
+}

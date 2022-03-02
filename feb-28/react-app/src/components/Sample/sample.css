@@ -1,0 +1,16 @@
+.sample-container {
+  margin-top: 60px;
+}
+.user-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.user-card {
+  min-width: 20vw;
+  background-color: cadetblue;
+  list-style-type: none;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 20px;
+}
