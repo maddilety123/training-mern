@@ -1,0 +1,24 @@
+//step:1 creating new database with name university
+test> use university;
+
+//step:2 creating collection student and inserting data
+university> db.student.insertMany([{id:1,university: 'USAL',name: 'Computer Science',level: 'Excellent',contact: {phone: "999999999", email: "test@gmail.com"}},{id:2,university: "USAL",name: "Electronics",level: "Intermediate",contact: {phone: "999999988", email: "test1@gmail.com"}},{id:3,university: "USAL",name: "Communication",level: "Excellent"}]);
+
+//step:3 updating all the records with the new field “selected:true” whose level is 'Excellent'
+university> db.student.updateMany({level:'Excellent'},{$set:{selected:true}});
+
+//step:4 updating Name field to ‘IT’ whose university is ‘ABCD’ and whose level is 'Excellent'
+university> db.student.updateMany({level:'Excellent',university:"ABCD"},{$set:{name:"IT"}});
+
+//step:5 adding a field createdAt to all the fields using operator currentDate
+university> db.student.updateMany({},{$currentDate:{createdat:true}});
+
+//step:6 Adding a field ‘amount’ to all the documents and set its value to 500
+university> db.student.updateMany({},{$set:{amount:500}});
+
+//step:7 Increment the amount to 600 for all those whose level is 'Excellent'
+university> db.student.updateMany({level:'Excellent'},{$inc:{amount:600}});
+
+//step:8 Updating all the docs whose amount is less than 600 with  new field "greeting" with value "this document amount is less than 600"
+niversity> db.student.updateMany({amount:{$lt:600}},{$set:{greeting:"this document amount is less than 600"}});
+
